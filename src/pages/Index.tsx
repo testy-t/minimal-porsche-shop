@@ -114,8 +114,8 @@ export default function Index() {
             Premium Automotive Detailing
           </p>
           <h1 className="text-[13vw] font-light leading-[1.02] tracking-tight text-white mb-5">
-            Your Car.<br />
-            <span className="italic">Perfected.</span>
+            Detail. Protect.<br />
+            <span className="italic">Shine.</span>
           </h1>
           <p className="text-[15px] font-light text-white/55 max-w-[280px] leading-relaxed mb-8">
             Porsche-level care for every vehicle. Mobile & studio, across the US.
