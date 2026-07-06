@@ -56,6 +56,7 @@ const stats = [
 export default function Index() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [heroLoaded, setHeroLoaded] = useState(false);
 
   return (
     <div className="min-h-screen bg-white text-[#1d1d1f] font-sans antialiased overflow-x-hidden">
@@ -106,7 +107,10 @@ export default function Index() {
         <img
           src={HERO_IMG}
           alt="Car detailing"
-          className="absolute inset-0 w-full h-full object-cover"
+          onLoad={() => setHeroLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-out ${
+            heroLoaded ? "opacity-100" : "opacity-0"
+          }`}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/72 via-black/20 to-transparent" />
         <div className="relative z-10 animate-fade-up">
