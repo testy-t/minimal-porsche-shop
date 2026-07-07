@@ -63,8 +63,15 @@ export default function Index() {
 
       {/* NAV */}
       <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-5 h-14 bg-white/80 backdrop-blur-xl border-b border-black/[0.06]">
-        <span className="text-[15px] font-medium tracking-tight">
-          911 Detailing
+        <span className="flex items-center gap-2">
+          <img
+            src="https://cdn.poehali.dev/projects/faecd8f5-4313-40d9-88d3-cd00c59e6848/bucket/5769e279-fcf1-4c68-8a4b-8a768149c67d.jpg"
+            alt="911 Detailing logo"
+            className="w-6 h-6 [filter:invert(1)] mix-blend-multiply select-none pointer-events-none"
+          />
+          <span className="text-[15px] font-medium tracking-tight">
+            911 Detailing
+          </span>
         </span>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
